@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <script src="./scripts/script.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" id="result" placeholder="0" disabled />
+          </td>
+        </tr>
+
+        <tr>
+          <td><button onclick="concat('/')">/</button></td>
+          <td colspan="3">
+            <button onclick="clear()" style="width: 220px">C</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="concat('+')">+</button></td>
+          <td><button onclick="concat(1)">1</button></td>
+          <td><button onclick="concat(2)">2</button></td>
+          <td><button onclick="concat(3)">3</button></td>
+        </tr>
+
+        <tr>
+          <td><button onclick="concat('-')">-</button></td>
+          <td><button onclick="concat(4)">4</button></td>
+          <td><button onclick="concat(5)">5</button></td>
+          <td><button onclick="concat(6)">6</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="concat('*')">x</button></td>
+          <td><button onclick="concat(7)">7</button></td>
+          <td><button onclick="concat(8)">8</button></td>
+          <td><button onclick="concat(9)">9</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="calculate()">=</button></td>
+          <td colspan="3">
+            <button onclick="concat(0)" style="width: 220px">0</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
